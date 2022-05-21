@@ -1,3 +1,9 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -290,7 +296,7 @@ footer .special {
   font-size: 1.25rem;
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1792px) {
+@media screen and (min-width: 200px) and (max-device-width: 320px) {
   .hero {
     height: 100vh;
   }
@@ -301,11 +307,27 @@ footer .special {
   .hero .illustration img {
     width: 60%;
     bottom: 40%;
-    right: 15%;
+    right: 25%;
+  }
+  .traits .trait-row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  footer .row-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .contact-form {
+    margin-bottom: 2.5vh;
   }
 }
 
-@media screen and (min-device-width: 767.5px) and (min-device-width: 1023.5px) {
+@media screen and (min-device-width: 321px) and (max-device-width: 480px) {
   .hero {
     height: 100vh;
   }
@@ -314,13 +336,29 @@ footer .special {
     padding-top: 75vh;
   }
   .hero .illustration img {
-    width: 40%;
+    width: 52%;
     bottom: 40%;
     right: 25%;
   }
+  .traits .trait-row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  footer .row-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .contact-form {
+    margin-bottom: 2.5vh;
+  }
 }
 
-@media screen and (min-device-width: 479.5px) and (min-device-width: 767px) {
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .hero {
     height: 100vh;
   }
@@ -351,7 +389,7 @@ footer .special {
   }
 }
 
-@media screen and (min-device-width: 320px) and (min-device-width: 479px) {
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   .hero {
     height: 100vh;
   }
@@ -360,29 +398,13 @@ footer .special {
     padding-top: 75vh;
   }
   .hero .illustration img {
-    width: 52%;
+    width: 40%;
     bottom: 40%;
     right: 25%;
   }
-  .traits .trait-row {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-  }
-  footer .row-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-  }
-  footer .contact-form {
-    margin-bottom: 2.5vh;
-  }
 }
 
-@media screen and (min-device-width: 200px) and (min-device-width: 319.5px) {
+@media screen and (min-device-width: 1025px) and (max-device-width: 1792px) {
   .hero {
     height: 100vh;
   }
@@ -393,23 +415,7 @@ footer .special {
   .hero .illustration img {
     width: 60%;
     bottom: 40%;
-    right: 25%;
-  }
-  .traits .trait-row {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-  }
-  footer .row-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-  }
-  footer .contact-form {
-    margin-bottom: 2.5vh;
+    right: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
